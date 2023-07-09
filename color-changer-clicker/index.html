@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      body {
+        height: 100vh;
+        font-family: 'Prompt', sans-serif;
+        transition: all 0.5s ease-in;
+      }
+      main {
+        max-width: 120rem;
+      }
+      h1 {
+        font-size: 4.4rem;
+        padding-top: 3rem;
+      }
+      .clicker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        gap: 3.2rem;
+        font-size: 3.2rem;
+      }
+      .color-btn {
+        font-size: 1.6rem;
+        border-radius: 10px;
+        padding: 1.2rem 2.4rem;
+        cursor: pointer;
+        box-shadow: 0 2px 6px 3px rgba(5, 5, 5, 0.23);
+        border: none;
+        transition: all 1s;
+        background-color: #cccccc8e;
+      }
+      .color-btn:active {
+        transform: translateY(-5px);
+        box-shadow: 0 2px 12px 4px rgba(5, 5, 5, 0.13);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Color Magic!!!</h1>
+      <section class="clicker">
+        <p class="color-name">
+          RGB(<span class="display-red">0</span>,
+          <span class="display-green">0</span>,
+          <span class="display-blue">0</span>)
+        </p>
+        <button class="color-btn">Change color</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
