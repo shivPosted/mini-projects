@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 255, 255, 0.8);
+  font-family: sans-serif;
+}
+
+.main {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.person-image {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.person-image img {
+  width: 100%;
+}
+.person-name {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: #444;
+}
+
+.friend-status {
+  color: orangered;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.add-friend {
+  background-color: rgb(0, 255, 255, 0.8);
+  color: #fff;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  border-radius: 100vw;
+  cursor: pointer;
+  border: none;
+}
