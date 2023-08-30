@@ -75,3 +75,13 @@ body {
   height: 3.2rem;
   transition: all 0.3s;
 }
+
+.cursor {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+  mix-blend-mode: difference;
+  transition: linear 0.2s ease-in;
+}
