@@ -35,9 +35,9 @@ body {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  opacity: 0.9;
+  opacity: 0;
   mix-blend-mode: difference;
-  transition: all 0.2s;
+  transition: linear 0.2s;
   z-index: -1;
   transform: translate(-50%, -50%);
 }

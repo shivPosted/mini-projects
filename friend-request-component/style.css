@@ -83,5 +83,5 @@ body {
   position: absolute;
   background-color: #fff;
   mix-blend-mode: difference;
-  transition: linear 0.2s ease-in;
+  transition: linear 0.2s;
 }
