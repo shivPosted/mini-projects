@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 80%;
+  height: 80%;
+  background-color: orangered;
+}
+
+.div {
+  position: absolute;
+  height: 30rem;
+  width: 20rem;
+  /* background-color: black; */
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.translate {
+  transform: translateY(0);
+}
+
+.div img {
+  width: 100%;
+  /* height: 100%; */
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
