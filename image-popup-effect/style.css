@@ -19,7 +19,6 @@ body {
 .main {
   width: 80%;
   height: 80%;
-  background-color: orangered;
 }
 
 .div {
@@ -31,13 +30,14 @@ body {
   transition: all 0.5s;
 }
 
-.translate {
-  transform: translateY(0);
-}
-
-.div img {
+.div .img {
   width: 100%;
   /* height: 100%; */
-  transform: translateY(100%);
-  transition: all 0.5s;
+  transform: translateY(120%);
+  transition: all 0.3s linear;
+}
+
+.img.translate {
+  transform: translateY(0);
+  transition: all 0.5s ease-out;
 }

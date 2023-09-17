@@ -26,14 +26,20 @@ mainDiv.addEventListener(
     div.style.left = e.clientX + "px";
     div.style.top = e.clientY + "px";
     const img = document.createElement("img");
-    img.setAttribute(
-      "src",
-      "https://images.unsplash.com/photo-1694758086814-423e0c0d45b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80"
-    );
+    const num = Math.floor(Math.random() * 9);
+    const url = "img/" + num + ".jpg";
+    console.log(url);
+    img.setAttribute("src", url);
+    img.classList.add("img");
     div.append(img);
+
     setTimeout(() => {
-      img.setAttribute("class", "translate");
-    }, 500);
+      img.classList.add("translate");
+      setTimeout(() => {
+        img.classList.remove("translate");
+      }, 800);
+    }, 0);
+
     setTimeout(() => {
       div.remove();
     }, 1000);
